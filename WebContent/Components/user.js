@@ -98,6 +98,26 @@ $(document).on("click", "#btnSave", function(event)
     }
     
     
+//UPDATE=========================================================
+$(document).on("click", ".btnUpdate",function(event)
+{
+	$("#hidAppIDSave").val($(this).closest("tr").find('td:eq(0)').text());	
+	$("#accountId").val($(this).closest("tr").find('td:eq(0)').text());
+	$("#isAdmin").val($(this).closest("tr").find('td:eq(1)').text());
+	$("#firstName").val($(this).closest("tr").find('td:eq(2)').text());
+	$("#lastName").val($(this).closest("tr").find('td:eq(3)').text());
+	$("#nic").val($(this).closest("tr").find('td:eq(4)').text());
+	$("#permanantAddress").val($(this).closest("tr").find('td:eq(5)').text());
+	$("#mobileNumber").val($(this).closest("tr").find('td:eq(6)').text());
+	$("#landNumber").val($(this).closest("tr").find('td:eq(7)').text());
+	$("#email").val($(this).closest("tr").find('td:eq(8)').text());
+	$("#userPassword").val($(this).closest("tr").find('td:eq(9)').text());
+	$("#areaoffice").val($(this).closest("tr").find('td:eq(10)').text());
+	$("#joinDate").val($(this).closest("tr").find('td:eq(11)').text());
+	
+	
+});
+
 
 //onUserDeleteComplete function
 function onUserDeleteComplete(response, status)
