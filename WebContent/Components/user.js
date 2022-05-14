@@ -118,6 +118,22 @@ $(document).on("click", ".btnUpdate",function(event)
 	
 });
 
+//DELETE==========================================================
+$(document).on("click", ".btnRemove", function(event)
+{
+	//AJAX for delete
+	$.ajax(
+		{
+			url : "UserAPI",
+			type : "DELETE",
+			data : "id=" + $(this).data("id"),
+			dataType : "text",
+			complete : function(response, status)
+			{
+				onUserDeleteComplete(response.responseText, status);
+			}
+	});
+}); 
 
 //onUserDeleteComplete function
 function onUserDeleteComplete(response, status)
