@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.0.23, for Win64 (x86_64)
 --
--- Host: localhost    Database: electro
+-- Host: localhost    Database: electrogred
 -- ------------------------------------------------------
 -- Server version	8.0.23
 
@@ -23,19 +23,20 @@ DROP TABLE IF EXISTS `users`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `users` (
-  `accountId` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `accountId` varchar(20) NOT NULL,
   `isAdmin` tinyint(1) DEFAULT NULL,
-  `firstName` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `lastName` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `nic` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `permanantAddress` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `mobileNumber` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `landNumber` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `email` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `userPassword` varchar(50) COLLATE utf8mb4_cs_0900_ai_ci DEFAULT NULL,
-  `areaoffice` varchar(50) COLLATE utf8mb4_cs_0900_ai_ci DEFAULT NULL,
-  `joinDate` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_cs_0900_ai_ci;
+  `firstName` varchar(50) DEFAULT NULL,
+  `lastName` varchar(50) DEFAULT NULL,
+  `nic` varchar(50) DEFAULT NULL,
+  `permanantAddress` varchar(50) DEFAULT NULL,
+  `mobileNumber` varchar(50) DEFAULT NULL,
+  `landNumber` varchar(50) DEFAULT NULL,
+  `email` varchar(50) DEFAULT NULL,
+  `userPassword` varchar(20) DEFAULT NULL,
+  `areaoffice` varchar(20) DEFAULT NULL,
+  `joinDate` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`accountId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -44,7 +45,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES ('AN220515012729529',0,'Lakshan','VIdanapathirana','9876787656V','Peradeniya','0712345678','0811234567','Lakshan@gmail.com','Abc%401234','Peradeniya','2021-09-15'),('AN220515020135535',0,'Thisara','Yashodha','8787887777V','Gampaha','0754367876','0813456543','thisara@gmail.com	','2525252','Ganemulla','2014-03-15');
+INSERT INTO `users` VALUES ('AN220515012729529',0,'Lakshan','VIdanapathirana','9876787656V','Peradeniya','0712345678','0811234567','Lakshan@gmail.com','Abc401234','Peradeniya','2021-09-15'),('AN220515020135535',0,'Thisara','Yashodha','8787887777V','Gampaha','0754367876','0813456543','thisara@gmail.com	','2525252','Ganemulla','2014-03-15');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -57,4 +58,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-05-15 14:11:51
+-- Dump completed on 2022-05-15 17:36:15
