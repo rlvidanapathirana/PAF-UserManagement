@@ -168,11 +168,7 @@ function onUserDeleteComplete(response, status)
 //CLIENT-MODEL============================================
 function validationUserForm()
 {
-	//accountId
-	//if($("#accountId").val().trim() == "")
-	//{
-		//return "Insert User accountId.";
-	//}
+	 
 	
 	
 	//isAdmin

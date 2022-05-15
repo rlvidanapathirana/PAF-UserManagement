@@ -3,7 +3,7 @@
 	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
 	id="WebApp_ID" version="4.0">
-	<display-name>AppointmentService</display-name>
+	<display-name>UserService</display-name>
 
 
 	<servlet>
@@ -14,7 +14,7 @@
 
 	<servlet-mapping>
 		<servlet-name>Jersey Web Application</servlet-name>
-		<url-pattern>/AppointmentService/*</url-pattern>
+		<url-pattern>/UserService/*</url-pattern>
 	</servlet-mapping>
 	
 	
