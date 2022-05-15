@@ -45,11 +45,11 @@
 				           		class="form-control form-control-sm">
 				    
 				    <br> Mobile Number:
-				   	<input id="mobileNumber" name="mobileNumber" type="number"
+				   	<input id="mobileNumber" name="mobileNumber" type="tel"
 				           		class="form-control form-control-sm">     
 				           		
 				    <br> Land Number:
-				   	<input id="landNumber" name="landNumber" type="number"
+				   	<input id="landNumber" name="landNumber" type="tel"
 				           		class="form-control form-control-sm"> 
 				           		
 				    <br> Email:
@@ -64,7 +64,7 @@
 				           		class="form-control form-control-sm">
 				           		
 				     <br>  Join Date:
-				   	<input id="joinDate" name="joinDate" type="text"
+				   	<input id="joinDate" name="joinDate" type="date"
 				           		class="form-control form-control-sm">
 					<br>
 				    <!-- <p>Status:</p>
